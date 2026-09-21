@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Copias generadas por el laboratorio
+*.bak
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Cobertura / build
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporales
+*.tmp
+*.temp
+~$*
