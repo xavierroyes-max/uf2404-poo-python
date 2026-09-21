@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UF2404 · Laboratorio interactivo Python</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><strong>UF2404</strong><span>Laboratorio POO · Python</span></div>
+    <nav id="exerciseList"></nav>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div><span class="eyebrow">EJERCICIO <span id="exerciseNo">1</span></span><h1 id="title">Cargando…</h1><p id="concepts"></p></div>
+      <div class="status"><span class="dot"></span> Python local</div>
+    </header>
+    <section class="grid">
+      <article class="panel controls">
+        <div class="panel-head"><div><h2>Variables de prueba</h2><p>Cambia valores y ejecuta el escenario.</p></div><button class="btn ghost" id="resetBtn">Restablecer</button></div>
+        <div id="formFields" class="fields"></div>
+        <div class="actions"><button class="btn primary" id="runLabBtn">▶ Ejecutar paso a paso</button><button class="btn" id="runOriginalBtn">Ejecutar .py actual</button></div>
+      </article>
+      <article class="panel terminal-panel">
+        <div class="panel-head"><div><h2>Salida</h2><p>Resultado real de la prueba.</p></div></div>
+        <pre id="terminal" class="terminal">Selecciona valores y pulsa Ejecutar.</pre>
+      </article>
+    </section>
+    <section class="panel steps-panel">
+      <div class="panel-head"><div><h2>Paso a paso</h2><p>Qué ocurre y por qué.</p></div></div>
+      <div id="steps" class="steps"><div class="empty">Aún no hay ejecución.</div></div>
+      <div id="notes" class="notes"></div>
+    </section>
+    <section class="panel code-panel">
+      <div class="panel-head">
+        <div><h2>Código Python</h2><p>Puedes modificarlo, guardar y ejecutar el fichero real.</p></div>
+        <div class="actions small"><button class="btn" id="restoreBtn">Restaurar .bak</button><button class="btn primary" id="saveBtn">Guardar cambios</button></div>
+      </div>
+      <textarea id="codeEditor" spellcheck="false"></textarea>
+      <div id="saveMessage" class="save-message"></div>
+    </section>
+    <section class="panel teacher-panel">
+      <div class="panel-head"><div><h2>Cómo explicarlo</h2><p>Guía breve para alumno y defensa ante el profesor.</p></div></div>
+      <div class="explain-grid"><div><h3>Alumno</h3><p id="studentExplain"></p></div><div><h3>Profesor</h3><p id="teacherExplain"></p></div></div>
+    </section>
+  </main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
